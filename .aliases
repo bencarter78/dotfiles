@@ -1,0 +1,123 @@
+# Set up
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# WebDev
+alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up"
+alias hosts="vi /etc/hosts"
+alias mamp="vi /Applications/MAMP/conf/apache/httpd.conf"
+alias phpunit="vendor/bin/phpunit"
+alias spec="vendor/bin/phpspec"
+alias desc="clear && spec describe"
+alias selenium="java -jar /usr/local/bin/selenium-server-standalone-2.48.2.jar"
+
+# Vagrant/Homestead
+alias hsy="subl ~/.homestead/Homestead.yaml"
+alias hs="~/Sites/Homestead"
+
+# Laravel
+alias art="clear && php artisan"
+alias artda="clear && php artisan dump-autoload"
+alias serve="clear && php artisan serve"
+alias laranew="composer create-project --prefer-dist laravel/laravel"
+alias tinker="php artisan tinker"
+alias routes="clear && php artisan route:list"
+
+# Laravel 5
+alias m:c="php artisan make:controller"
+alias m:com="php artisan make:command"
+alias m:con="php artisan make:console"
+alias m:e="php artisan make:event"
+alias m:mid="php artisan make:middleware"
+alias m:mig="php artisan make:migration"
+alias m:m="php artisan make:model"
+alias m:p="php artisan make:provider"
+alias m:r="php artisan make:request"
+alias r:l="php artisan route:list"
+alias r:c="php artisan route:cache"
+alias r:cl="php artisan route:clear"
+alias refresh="php artisan migrate:refresh --seed"
+alias mig="php artisan migrate"
+
+#PHPUnit
+alias t="clear && phpunit"
+alias tunit="clear && phpunit --testsuite=unit"
+alias dusk="php artisan dusk"
+
+# Vagrant
+alias vup="vagrant up"
+alias vssh="vagrant ssh"
+alias vhalt="vagrant halt"
+alias vst="vagrant status"
+alias vp="vagrant provision"
+
+# Git
+alias ga="git add"
+alias gs="git status"
+alias gc="git commit -m "
+alias gp="git push"
+alias grmidea="git rm -r --cached .idea"
+alias grmcached="git rm -r --cached"
+alias gmeh="git reset --hard HEAD && git clean -df"
+
+# Composer
+alias com="clear && composer"
+alias cin="clear && composer install"
+alias cup="clear && composer update"
+alias csup="clear && composer self-update"
+alias comda="clear && composer dump-autoload -o"
+alias cda="clear && composer dump-autoload -o"
+
+# Useful Locations
+alias db="cd ~/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias sites="cd ~/Code/Sites"
+alias code="cd ~/Code"
+alias proj="cd ~/Code/Sites/Projects"
+alias htdocs="cd /Applications/MAMP/htdocs"
+alias ~="cd ~"
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
+alias pi="~/Pi"
+alias mybin="cd /usr/local/bin"
+alias sss="cd ~/Code/Sites/sss"
+
+# Applications
+alias subl="open -a Sublime\ Text"
+alias spot="open /Applications/Spotify.app"
+alias atom="open -a /Applications/Atom.app"
+alias vs="open -a /Applications/Visual\ Studio\ Code.app"
+
+# Useful commands
+alias la="ls -lah"
+alias del="rm -rf"
+alias aliases="vi ~/.aliases"
+alias cl="clear"
+alias reload="source ~/.zshrc"
+alias ezsh="vi ~/.zshrc"
+alias evimrc="vi ~/.vimrc"
+
+# Pi
+alias pimedia="ssh root@192.168.1.252"
+
+# SSH
+alias sshkey="cat ~/.ssh/id_rsa.pub | pbcopy"
+alias sshtp="ssh root@178.62.122.102"
+alias sshdev="ssh root@178.62.94.15"
+alias piserver="ssh pi@192.168.1.170"
+alias sshgaa="ssh forge@139.59.174.161"
+
+# Rails
+alias rt="rails t"
+alias rmigt="rails db:migrate RAILS_ENV=test"
+alias s="rake spec"
+alias z="zeus test spec"
+
+# Go
+alias got="clear && go test"
+alias gor="clear && go run"
+
+# Exercism
+alias ef="exercism fetch"
+alias es="exercism submit"
